@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Bookaholic</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/styles.css">
+
+        <!-- JavaScript -->
+	    <script type="module" src="/main.js"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>  
+
+            <!--  ===== NAVIGATION ===== -->
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#search-section">Hledat knihy</a></li>
+                    <li><a href="#library-section">Moje Knihovna</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="title-frame">
+                <h1 class="title">bookaholic</h1>
+            </div>
+
+            <!--  ===== SEARCH ===== -->
+            <section id="search-section"> 
+                <p class="hidden">vyhledávání knih</p>
+
+                <form class="search" role="search">
+                    <label for="book-search" class="hidden">Vyhledat</label>
+                    <div class="search-box">
+                        <span class="search-icon">⌕</span>
+                        <input id="book-search" type="search" name="query" placeholder="vyhledat knihu">
+                    </div>
+                </form>
+                <div id="search-results" class="search-results"></div>
+            </section>
+
+            <!-- ===== LIBRARY ===== -->
+            <section id="library-section"> <p class="hidden">moje knihovna</p>
+                <div class="empty-space"></div>
+                <div class="year-frame">
+                    <h2 class="year">2026</h2>
+                    <div id="book-container" class="books">
+
+                        <!-- ===== CARD OF A BOOK =====-->                        
+
+                    </div>
+                    <div class="divider"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copywrigth">© Anna Kollmannová</p>
+        </footer>
+    </body>
+</html>
